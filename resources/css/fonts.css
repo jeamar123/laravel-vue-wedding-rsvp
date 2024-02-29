@@ -1,0 +1,26 @@
+@font-face{
+  font-family: 'adelio-darmanto';
+  src: url('/fonts/Adelio Darmanto.otf');
+}
+@font-face{
+  font-family: 'dreamland';
+  src: url('/fonts/dreamland.ttf');
+}
+@font-face{
+  font-family: 'lemon-milk';
+  src: url('/fonts/lemon-milk-regular.otf');
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/Outfit-VariableFont_wght.ttf');
+  font-weight: 100 800;
+}
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('/fonts/GreatVibes-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  font-weight: 100 800;
+}
