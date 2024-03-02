@@ -1,6 +1,9 @@
 @import url('./tailwind.css');
 @import url('./fonts.css');
 
+html, body{
+  scroll-behavior: smooth;
+}
 
 .scroll-container{
   height: calc(100vh - 64px);

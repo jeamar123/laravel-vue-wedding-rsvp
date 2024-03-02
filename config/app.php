@@ -160,6 +160,11 @@ return [
          * Package Service Providers...
          */
 
+        // Modules
+        App\Modules\User\Providers\RouteServiceProvider::class,
+        App\Modules\Rsvp\Providers\RouteServiceProvider::class,
+        App\Modules\Admin\Providers\RouteServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -169,9 +174,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-
-        // Modules
-        App\Modules\User\Providers\RouteServiceProvider::class,
     ])->toArray(),
 
     /*

@@ -13,7 +13,10 @@ class UpdateUserAction
 
     public function execute(User $user, array $attributes): User
     {
-        $user->update($attributes);
+        $user->update([
+            ...$attributes,
+            'full_name' => $attributes['first_name'] . ' ' . $attributes['last_name'],
+        ]);
 
         return $user;
     }

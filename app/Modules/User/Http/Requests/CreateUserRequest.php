@@ -18,11 +18,11 @@ class CreateUserRequest extends FormRequest
         return [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'username' => ['required', 'string', 'max:255'],
+            'username' => ['sometimes', 'string', 'max:255'],
             'image' => ['nullable'],
-            'role' => ['required'],
-            'email' => ['required', 'email', Rule::unique(User::class, 'email')],
-            'password' => ['required'],
+            'role' => ['sometimes'],
+            'email' => ['nullable', 'email', Rule::unique(User::class, 'email')],
+            'password' => ['sometimes'],
             'login_type' => ['nullable'],
             'status' => ['nullable'],
         ];

@@ -8,9 +8,12 @@ use App\Modules\User\Http\Controllers\UpdateUserController;
 use App\Modules\User\Http\Controllers\DeleteUserController;
 use App\Modules\User\Http\Controllers\LoginUserController;
 use App\Modules\User\Http\Controllers\CurrentUserController;
+use App\Modules\User\Http\Controllers\ImportUserController;
 
 use App\Modules\User\Models\User;
 
+// Route::group(['middleware' => ['api_token']], function () {
+// })
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/', ListUsersController::class)
@@ -25,6 +28,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/', CreateUserController::class)
         ->name('user.create')
         ->can('create', User::class);
+    Route::post('/import', ImportUserController::class)
+        ->name('user.create')
+        ->can('create', User::class);
     Route::patch('/{user}', UpdateUserController::class)
         ->name('user.update')
         ->can('update', 'user');
@@ -32,7 +38,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         ->name('user.delete')
         ->can('delete', 'user');
 });
-
-
 
 Route::post('/login', LoginUserController::class)->name('user.login');

@@ -15,12 +15,16 @@ class CreateUserAction
 
     public function execute(array $attributes): User
     {
+        $role = isset($attributes['password']) ? $attributes['role'] : 'user';
+
         $user = User::create([
             ...$attributes,
-            'password' => Hash::make($attributes['password']),
+            'full_name' => $attributes['first_name'] . ' ' . $attributes['last_name'],
+            'password' => isset($attributes['password']) ? Hash::make($attributes['password']) : null,
+            'role' => $role
         ]);
 
-        $user->assignRole(SpatieRole::where('name', $attributes['role'])->first());
+        $user->assignRole(SpatieRole::where('name', $role)->first());
 
         return $user;
     }

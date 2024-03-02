@@ -6,11 +6,11 @@
     </div>
     <div class="flex flex-col min-h-screen pt-[65px] md:pt-[75px]">
       <div class="flex-1 pt-10 md:pt-20 overflow-y-auto bg-[#F6F2E7]">
-        <!-- <StepOne 
+         <StepOne 
           v-if="step === 1" 
           class="flex-1"
           @success="step = 2"
-          @back="$router.go({ name: 'Main' })"
+          @back="$router.push({ name: 'Landingpage' })"
         />
         <StepTwo 
           v-if="step === 2" 
@@ -30,7 +30,7 @@
           v-if="step === 4" 
           class="flex-1"
           @reset="reset"
-        /> -->
+        />
       </div>
       <Footer />
     </div>
@@ -41,10 +41,10 @@
 import { ref } from 'vue'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-// import StepOne from '@/components/RsvpForm/StepOne.vue'
-// import StepTwo from '@/components/RsvpForm/StepTwo.vue'
-// import StepThree from '@/components/RsvpForm/StepThree.vue'
-// import StepDone from '@/components/RsvpForm/StepDone.vue'
+import StepOne from '@/components/RsvpForm/StepOne.vue'
+import StepTwo from '@/components/RsvpForm/StepTwo.vue'
+import StepThree from '@/components/RsvpForm/StepThree.vue'
+import StepDone from '@/components/RsvpForm/StepDone.vue'
 
 const step = ref(1)
 

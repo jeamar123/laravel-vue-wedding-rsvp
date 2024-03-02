@@ -1,5 +1,5 @@
 <template>
-  <div id="details" class="relative bg-[#F6F2E7] border-b border-[#E1D5B3] py-[80px] md:py-[150px] z-20 border-b border-[#E1D5B3] shadow-[0_0_25px_rgba(0,0,0,0.35)]">
+  <section id="details" class="relative bg-[#F6F2E7] border-b border-[#E1D5B3] py-[80px] md:py-[150px] z-20 border-b border-[#E1D5B3] shadow-[0_0_25px_rgba(0,0,0,0.35)]">
     
     <div class="max-w-[1280px] mx-auto px-7 md:px-[100px]">
       <div class="flex flex-col-reverse md:flex-row items-start gap-[50px] mb-[50px]">
@@ -26,7 +26,7 @@
       </div>
       <p class="text-center md:font-medium text-xl sm:text-[24px] wow fadeInUp" data-wow-delay="0.5s">Please do not wear White, no slippers and tattered jeans.</p>
     </div> 
-  </div>
+  </section>
 </template>
 
 <script setup>

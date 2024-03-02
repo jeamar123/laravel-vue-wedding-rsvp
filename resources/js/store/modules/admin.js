@@ -1,6 +1,6 @@
 import axios from 'axios'
-axios.defaults.adminBaseURL = import.meta.env.VITE_APP_ADMIN_API_URL
-axios.defaults.apiKey = import.meta.env.VITE_APP_AUTHORIZATION
+// axios.defaults.adminBaseURL = import.meta.env.VITE_APP_ADMIN_API_URL
+// axios.defaults.apiKey = import.meta.env.VITE_APP_AUTHORIZATION
 
 import { UPDATE_LOADING_STATE } from '@/store/index'
 
@@ -40,7 +40,7 @@ const actions = {
   async [REQUEST_ADMIN_LOGIN]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      axios.post(`${axios.defaults.adminBaseURL}/login`, params, {
+      axios.post('/api/admin/login', params, {
         headers: {
           'x-access-token': axios.defaults.apiKey,
         }
@@ -81,7 +81,7 @@ const actions = {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
       axios
-        .get(`${axios.defaults.adminBaseURL}/users`, actions.getHeaders())
+        .get('/api/user', actions.getHeaders())
         .then((res) => {
           console.log(res)
           commit(UPDATE_ADMIN_STATE, { 
@@ -101,7 +101,7 @@ const actions = {
   async [REQUEST_UPLOAD_USERS]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      axios.post(`${axios.defaults.baseURL}/invited/upload`, params, {
+      axios.post('/api/user/import', params, {
         headers: {
           'Content-Type': 'multipart/form-data',
           ...actions.getHeaders().headers
@@ -123,7 +123,7 @@ const actions = {
   async [REQUEST_CREATE_USER]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      axios.post(`${axios.defaults.baseURL}/invited/create`, params, actions.getHeaders())
+      axios.post('/api/user', params, actions.getHeaders())
         .then(res => {
           // console.log(res);
           commit(UPDATE_LOADING_STATE, { show: false })
@@ -140,7 +140,7 @@ const actions = {
   async [REQUEST_UPDATE_USER]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      axios.patch(`${axios.defaults.baseURL}/invited/update/${params.id}`, params.data, actions.getHeaders())
+      axios.patch(`/api/user/${params.id}`, params.data, actions.getHeaders())
         .then(res => {
           console.log(res);
           commit(UPDATE_LOADING_STATE, { show: false })
@@ -157,7 +157,7 @@ const actions = {
   async [REQUEST_DELETE_USER]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      axios.delete(`${axios.defaults.baseURL}/invited/delete/${params.id}`, actions.getHeaders())
+      axios.delete(`/api/user/${params.id}`, actions.getHeaders())
         .then(res => {
           // console.log(res);
           commit(UPDATE_LOADING_STATE, { show: false })

@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[#282828] h-screen overflow-y-auto font-sans">
+  <main class="bg-[#282828] font-sans scroll-smooth">
     <LoadWrapper 
       v-if="showLoadWrapper"
       @hide="() => {
@@ -17,11 +17,11 @@
       <Registry />
       <Rsvp />
       <Footer />
+    </div>
 
-      <audio id="canon-d-audio" loop class="absolute bottom-0">
+    <audio id="canon-d-audio" loop class="absolute bottom-0">
         <source src="/canon-d-instrumental.mp3" type="audio/mp3">
       </audio>
-    </div>
   </main>
 </template>
 
@@ -40,8 +40,14 @@ import {
   Registry,
   Rsvp,
 } from '@/components/landingpage'
+import { useStore } from 'vuex'
+import { UPDATE_ENTRANCE_LOADER_STATE } from '@/store/index'
 
-const showLoadWrapper = ref(true)
+const store = useStore()
+const commit = store.commit
+
+const showLoadWrapper = computed(() => store.state.showEntranceLoader)
+
 const isAudioPlaying = ref(false)
 
 const playAudio = () => {
@@ -51,7 +57,7 @@ const playAudio = () => {
   }, 300);
 }
 
-const hideEntranceLoader = () => showLoadWrapper.value = false
+const hideEntranceLoader = () => commit(UPDATE_ENTRANCE_LOADER_STATE, false)
 
 onMounted(() => {
   if(!isAudioPlaying.value){

@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-[#FFFDF6] border-b border-[#E1D5B3] pt-[80px] pb-[120px] md:py-[100px] z-10 border-b border-[#E1D5B3]">
+  <section class="relative bg-[#FFFDF6] border-b border-[#E1D5B3] pt-[80px] pb-[120px] md:py-[100px] z-10 border-b border-[#E1D5B3]">
     <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-start gap-10 px-7 md:px-[100px]">
       <div class="w-full md:w-[350px] wow fadeInUp">
         <img src="images/3.jpg" alt="" class="w-full rounded-[20px]">
@@ -22,7 +22,7 @@
         <h1 class="text-center text-[48px] ff-adelio-darmanto tracking-[3px] lowercase  wow fadeInUp">#<span class="text-[#9F5B4D] font-bold capitalize">Shiely</span>GotThe<span class="text-[#9F5B4D] font-bold capitalize">Jem</span></h1>
       </div>
     </div> 
-  </div>
+  </section>
 </template>
 
 <script setup>

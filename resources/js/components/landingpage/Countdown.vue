@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-[#F6F2E7] border-b border-[#E1D5B3] flex items-center justify-center py-[80px] sm:py-[150px] shadow-[0_0_25px_rgba(0,0,0,0.35)] z-20 overflow-hidden">
+  <section class="relative bg-[#F6F2E7] border-b border-[#E1D5B3] flex items-center justify-center py-[80px] sm:py-[150px] shadow-[0_0_25px_rgba(0,0,0,0.35)] z-20 overflow-hidden">
     <img src="images/countdown-bg.png" alt="" class="absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] scale-[1.6] sm:scale-125 md:scale-100 lg:w-[950px] lg:h-[550px] z-1">
 
     <div class="flex items-center gap-3 sm:gap-[40px] relative h-[300px] md:h-[550px]">
@@ -20,7 +20,7 @@
         <p class="text-[#000] text-xl sm:text-2xl ff-adelio-darmanto tracking-[3px] font-bold capitalize">seconds</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

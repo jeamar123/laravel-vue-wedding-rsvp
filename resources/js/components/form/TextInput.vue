@@ -14,7 +14,7 @@
         :value="modelValue"
         :type="type"
         :placeholder="placeholder"
-        class="w-full rounded border-2 border-form-border p-2 outline-none text-sm read-only:border-gray-200 read-only:text-gray-500 read-only:cursor-not-allowed block autofill:!bg-white transition-all"
+        class="w-full rounded border-2 border-form-border p-2 outline-none focus:outline-none text-sm read-only:border-gray-200 read-only:text-gray-500 read-only:cursor-not-allowed block autofill:!bg-white transition-all"
         :class="[
           !readOnly ? 'focus:border-gray-900' : '',
           errors.length ? 'border-red-500' : '',

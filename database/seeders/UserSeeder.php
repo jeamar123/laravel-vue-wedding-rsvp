@@ -14,6 +14,7 @@ class UserSeeder extends Seeder
 {
     protected const USERS = [
         [
+            'full_name' => 'Super Admin',
             'first_name' => 'Super',
             'last_name' => 'Admin',
             'email' => 'super@admin.com',
@@ -22,11 +23,32 @@ class UserSeeder extends Seeder
             'role' => Role::SUPER_ADMIN->value,
         ],
         [
-            'first_name' => 'Guest',
-            'last_name' => 'User',
-            'email' => 'user@example.com',
-            'username' => 'user',
-            'password' => 'password',
+            'full_name' => 'Admin Admin',
+            'first_name' => 'Admin',
+            'last_name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'username' => 'admin',
+            'password' => 'admin',
+            'role' => Role::SUPER_ADMIN->value,
+        ],
+        [
+            'full_name' => 'Jeamar Libres',
+            'first_name' => 'Jeamar',
+            'last_name' => 'Libres',
+            'email' => 'jeamar@example.com',
+            'username' => 'jeamar',
+            'password' => 'jeamar',
+            'group' => 'libres',
+            'role' => Role::USER->value,
+        ],
+        [
+            'full_name' => 'Shiely Libres',
+            'first_name' => 'Shiely',
+            'last_name' => 'Libres',
+            'email' => 'shiely@example.com',
+            'username' => 'shiely',
+            'password' => 'shiely',
+            'group' => 'libres',
             'role' => Role::USER->value,
         ],
     ];

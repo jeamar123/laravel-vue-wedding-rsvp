@@ -22,6 +22,7 @@ class User extends Authenticatable
         HasRoles;
 
     protected $fillable = [
+        'full_name',
         'first_name',
         'last_name',
         'username',

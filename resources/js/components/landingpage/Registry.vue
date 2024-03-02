@@ -1,5 +1,5 @@
 <template>
-  <div id="rsvp"  class="relative bg-[#FFFDF6] border-b border-[#E1D5B3] py-[100px] md:py-[150px] z-10 border-b border-[#E1D5B3] flex items-center justify-center">
+  <section id="rsvp"  class="relative bg-[#FFFDF6] border-b border-[#E1D5B3] py-[100px] md:py-[150px] z-10 border-b border-[#E1D5B3] flex items-center justify-center">
     <div class="text-center w-full max-w-[850px] px-7 md:px-[100px]">
       <!-- <h1 class="ff-dreamland font-normal text-[#9F5B4D] text-[64px] mb-[64px] text-center">Registry</h1>
 
@@ -12,7 +12,7 @@
         <p class="text-[#333] text-[24px] md:font-medium leading-[32px] wow fadeInUp" data-wow-delay="0.5s">YOUR PRESENCE IS YOUR PRESENT.</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

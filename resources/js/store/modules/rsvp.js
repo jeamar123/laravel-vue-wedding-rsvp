@@ -1,5 +1,5 @@
 import axios from 'axios'
-axios.defaults.baseURL = import.meta.env.VITE_APP_API_URL
+// axios.defaults.baseURL = import.meta.env.VITE_APP_API_URL
 // axios.defaults.withCredentials = true
 
 import { UPDATE_LOADING_STATE } from '@/store/index'
@@ -31,7 +31,7 @@ const actions = {
   getHeaders() {
     return  {
       headers: {
-        'x-access-token': axios.defaults.apiKey,
+        // 'x-access-token': axios.defaults.apiKey,
       }
     }
   },
@@ -53,7 +53,7 @@ const actions = {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
       axios
-        .post(`${axios.defaults.baseURL}/check-name`, params, actions.getHeaders())
+        .post('/api/rsvp/check-name', params, actions.getHeaders())
         .then((res) => {
           console.log(res)
           commit(UPDATE_FORM_STATE, { 
@@ -82,33 +82,18 @@ const actions = {
   async [REQUEST_RESERVATION]({ commit }, params) {
     return new Promise((resolve) => {
       commit(UPDATE_LOADING_STATE, { show: true })
-      if(state.form.rsvp){
-        axios
-          .patch(`${axios.defaults.baseURL}/update/reservation`, params, actions.getHeaders())
-          .then((res) => {
-            console.log(res)
-            commit(UPDATE_LOADING_STATE, { show: false })
-            resolve(res)
-          })
-          .catch((err) => {
-            // console.log(err.response)
-            commit(UPDATE_LOADING_STATE, { show: false })
-            resolve(err.response)
-          })
-      }else{
-        axios
-          .post(`${axios.defaults.baseURL}/create/reservation`, params, actions.getHeaders())
-          .then((res) => {
-            console.log(res)
-            commit(UPDATE_LOADING_STATE, { show: false })
-            resolve(res)
-          })
-          .catch((err) => {
-            // console.log(err.response)
-            commit(UPDATE_LOADING_STATE, { show: false })
-            resolve(err.response)
-          })
-      }
+      axios
+        .patch('/api/rsvp/update', params, actions.getHeaders())
+        .then((res) => {
+          console.log(res)
+          commit(UPDATE_LOADING_STATE, { show: false })
+          resolve(res)
+        })
+        .catch((err) => {
+          // console.log(err.response)
+          commit(UPDATE_LOADING_STATE, { show: false })
+          resolve(err.response)
+        })
     })
   },
 }
