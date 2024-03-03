@@ -4,7 +4,7 @@
   >
     <div class="mx-auto max-w-[1280px] w-full flex flex-col md:flex-row items-center justify-between gap-2 md:gap-5">
       <p class="text-[#555] font-normal">© 2022 #ShielyGotTheJem . All Rights Reserved</p>
-      <p class="text-[#555] font-normal">Made with Love By <b class="text-[#9F5B4D]">Jeamar and Shiela</b></p>
+      <p class="text-[#555] font-normal">Made with Love By <router-link :to="{ name: 'Admin' }" class="text-[#9F5B4D] font-bold">Jeamar and Shiela</router-link></p>
     </div>
 
     <button 
