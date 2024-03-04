@@ -21,7 +21,7 @@ class RoleSeeder extends Seeder
     ];
 
     protected const ROLES = [
-        Role::SUPER_ADMIN->value => [
+        'super_admin' => [
             'user:view',
             'user:create',
             'user:update',
@@ -31,7 +31,7 @@ class RoleSeeder extends Seeder
             'activity_log:update',
             'activity_log:delete',
         ],
-        Role::USER->value => [
+        'user' => [
             'user:view',
             'user:update',
         ]

@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'email' => 'super@admin.com',
             'username' => 'super_admin',
             'password' => 'password',
-            'role' => Role::SUPER_ADMIN->value,
+            'role' => 'super_admin',
         ],
         [
             'full_name' => 'Admin Admin',
@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
             'email' => 'admin@admin.com',
             'username' => 'admin',
             'password' => 'admin',
-            'role' => Role::SUPER_ADMIN->value,
+            'role' => 'super_admin',
         ],
         [
             'full_name' => 'Jeamar Libres',
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
             'username' => 'jeamar',
             'password' => 'jeamar',
             'group' => 'libres',
-            'role' => Role::USER->value,
+            'role' => 'user',
         ],
         [
             'full_name' => 'Shiely Libres',
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
             'username' => 'shiely',
             'password' => 'shiely',
             'group' => 'libres',
-            'role' => Role::USER->value,
+            'role' => 'user',
         ],
     ];
 
