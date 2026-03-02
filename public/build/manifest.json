@@ -1,29 +1,53 @@
 {
-  "_Button.vue_vue_type_script_setup_true_lang-CZZpq0Xw.js": {
-    "file": "assets/Button.vue_vue_type_script_setup_true_lang-CZZpq0Xw.js",
+  "_Button.vue_vue_type_script_setup_true_lang-D_1kqhQ1.js": {
+    "file": "assets/Button.vue_vue_type_script_setup_true_lang-D_1kqhQ1.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_FAQs-Bf8tNHoM.js": {
-    "file": "assets/FAQs-Bf8tNHoM.js",
+  "_FAQs-GwovFu5i.js": {
+    "file": "assets/FAQs-GwovFu5i.js",
     "imports": [
       "resources/js/app.js"
     ]
   },
-  "_Footer-DBB9aLwi.js": {
-    "file": "assets/Footer-DBB9aLwi.js",
+  "_Footer-Dc9mALWl.js": {
+    "file": "assets/Footer-Dc9mALWl.js",
     "imports": [
       "resources/js/app.js"
     ]
+  },
+  "public/fonts/Adelio Darmanto.otf": {
+    "file": "assets/Adelio Darmanto-DMW1a8jA.otf",
+    "src": "public/fonts/Adelio Darmanto.otf"
+  },
+  "public/fonts/GreatVibes-Regular.ttf": {
+    "file": "assets/GreatVibes-Regular-CARlJC0i.ttf",
+    "src": "public/fonts/GreatVibes-Regular.ttf"
+  },
+  "public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf": {
+    "file": "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf",
+    "src": "public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"
+  },
+  "public/fonts/Outfit/Outfit-VariableFont_wght.ttf": {
+    "file": "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+    "src": "public/fonts/Outfit/Outfit-VariableFont_wght.ttf"
+  },
+  "public/fonts/dreamland.ttf": {
+    "file": "assets/dreamland-BM9VDM69.ttf",
+    "src": "public/fonts/dreamland.ttf"
+  },
+  "public/fonts/lemon-milk-regular.otf": {
+    "file": "assets/lemon-milk-regular-pD5ies7F.otf",
+    "src": "public/fonts/lemon-milk-regular.otf"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BhRrMeqI.css",
+    "file": "assets/app-BiOJRtmR.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CREQQEQl.js",
+    "file": "assets/app-CE-G99Jg.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -37,92 +61,156 @@
     ],
     "css": [
       "assets/app-D3aahg_Q.css",
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Admin/Dashboard.vue": {
-    "file": "assets/Dashboard-BXRtRndI.js",
+    "file": "assets/Dashboard-el4omuwM.js",
     "src": "resources/js/pages/Admin/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Admin/Index.vue": {
-    "file": "assets/Index-B-gp6GDS.js",
+    "file": "assets/Index-BqwoLISi.js",
     "src": "resources/js/pages/Admin/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Admin/Login.vue": {
-    "file": "assets/Login-BgtHLPSr.js",
+    "file": "assets/Login-CnDTxtfu.js",
     "src": "resources/js/pages/Admin/Login.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Button.vue_vue_type_script_setup_true_lang-CZZpq0Xw.js"
+      "_Button.vue_vue_type_script_setup_true_lang-D_1kqhQ1.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Admin/Users/List.vue": {
-    "file": "assets/List-BX97ylxK.js",
+    "file": "assets/List-CU6rF22h.js",
     "src": "resources/js/pages/Admin/Users/List.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Button.vue_vue_type_script_setup_true_lang-CZZpq0Xw.js"
+      "_Button.vue_vue_type_script_setup_true_lang-D_1kqhQ1.js"
     ],
     "css": [
       "assets/List-QsBw1SvF.css",
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Faqs.vue": {
-    "file": "assets/Faqs-DsX8a-xF.js",
+    "file": "assets/Faqs-CljHXzz6.js",
     "src": "resources/js/pages/Faqs.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_FAQs-Bf8tNHoM.js",
-      "_Footer-DBB9aLwi.js"
+      "_FAQs-GwovFu5i.js",
+      "_Footer-Dc9mALWl.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Landingpage.vue": {
-    "file": "assets/Landingpage-BRw8Oo8A.js",
+    "file": "assets/Landingpage-vGDhlLt4.js",
     "src": "resources/js/pages/Landingpage.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-DBB9aLwi.js"
+      "_Footer-Dc9mALWl.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   },
   "resources/js/pages/Rsvp.vue": {
-    "file": "assets/Rsvp-DLzm-3hS.js",
+    "file": "assets/Rsvp-CMl9FOya.js",
     "src": "resources/js/pages/Rsvp.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-DBB9aLwi.js",
-      "_FAQs-Bf8tNHoM.js"
+      "_Footer-Dc9mALWl.js",
+      "_FAQs-GwovFu5i.js"
     ],
     "css": [
-      "assets/app-BhRrMeqI.css"
+      "assets/app-BiOJRtmR.css"
+    ],
+    "assets": [
+      "assets/Adelio Darmanto-DMW1a8jA.otf",
+      "assets/dreamland-BM9VDM69.ttf",
+      "assets/lemon-milk-regular-pD5ies7F.otf",
+      "assets/Outfit-VariableFont_wght-Cutr3deL.ttf",
+      "assets/GreatVibes-Regular-CARlJC0i.ttf",
+      "assets/Montserrat-VariableFont_wght-BX21VzKy.ttf"
     ]
   }
 }

@@ -6,7 +6,7 @@
       <div 
         class="h-[900px] relative flex flex-col justify-center bg-no-repeat bg-center 2xl:bg-top bg-cover bg-[rgba(0,0,0,0.15)] md:bg-[rgba(0,0,0,0.05)]"
         :style="{
-          'background-image' : `url('/images/wedding-hero.jpeg')`,
+          'background-image' : `url('./images/wedding-hero.jpeg')`,
           'background-blend-mode': `multiply`,
         }"
       > 
